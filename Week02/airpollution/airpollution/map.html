@@ -1,0 +1,52 @@
+<html>
+<head>
+    <style>
+      body {
+        margin: 0;
+      }
+      .container {
+        width: 100vw;
+        height: 100vh;
+        background: pink;
+      }
+    </style>
+</head>
+<body>
+<div id='map' class="container" />
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbfvbrzrC1zHWoNZ9zQf5-6egAka3VcZE&callback=initMap"></script>
+
+<script type="text/javascript">
+function initMap() {
+
+   
+   var lat = getParameter("lat");
+   var lng = getParameter("lng");
+   console.log(lat);
+   console.log(lng);
+   var map = new google.maps.Map(document.getElementById('map'), {
+         center: new google.maps.LatLng(lat, lng),
+         mapTypeId: google.maps.MapTypeId.ROADMAP,  
+         zoom: 11
+   });
+  
+   
+   var t = new Date().getTime();  
+   var waqiMapOverlay = new google.maps.ImageMapType({  
+         getTileUrl: function(coord, zoom) {  
+              return 'https://tiles.aqicn.org/tiles/usepa-aqi/' + zoom + "/" + coord.x + "/" + coord.y + ".png?token=7ff740e4bd5074fa7a0f1cfe90cee3bb0b74fffe";  
+         },  
+         name: "Air Quality",  
+    });  
+   map.overlayMapTypes.insertAt(0,waqiMapOverlay);  
+}
+  
+function getParameter(name) {
+  name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+  var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+      results = regex.exec(location.search);
+  return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+</script>
+</body>
+</html>

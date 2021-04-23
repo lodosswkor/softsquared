@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4199127A2633035F00B3AE6D /* map.html in Resources */ = {isa = PBXBuildFile; fileRef = 419912792633035F00B3AE6D /* map.html */; };
+		41A2D49D2632A8E5000A5C8A /* AirPollutionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A2D49C2632A8E5000A5C8A /* AirPollutionHelper.swift */; };
+		41B6420726334AB1003D6186 /* BMHANNAProOTF.otf in Resources */ = {isa = PBXBuildFile; fileRef = 41B6420626334A98003D6186 /* BMHANNAProOTF.otf */; };
+		7F123B874C921F2C7D82C427 /* Pods_airpollution.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05E2145DACC7680442C34157 /* Pods_airpollution.framework */; };
 		8988F1FD26312C43003C724B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8988F1FC26312C43003C724B /* MapViewController.swift */; };
 		8988F20126312D9F003C724B /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8988F20026312D9F003C724B /* FavoriteViewController.swift */; };
 		89FD1D15262FBBFC00DF5E80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FD1D14262FBBFC00DF5E80 /* AppDelegate.swift */; };
@@ -18,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05E2145DACC7680442C34157 /* Pods_airpollution.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_airpollution.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		419912792633035F00B3AE6D /* map.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = map.html; sourceTree = "<group>"; };
+		41A2D49C2632A8E5000A5C8A /* AirPollutionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPollutionHelper.swift; sourceTree = "<group>"; };
+		41B6420626334A98003D6186 /* BMHANNAProOTF.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BMHANNAProOTF.otf; sourceTree = "<group>"; };
 		8988F1FC26312C43003C724B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		8988F20026312D9F003C724B /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		89FD1D11262FBBFC00DF5E80 /* airpollution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = airpollution.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,6 +36,8 @@
 		89FD1D1D262FBC0100DF5E80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89FD1D20262FBC0100DF5E80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89FD1D22262FBC0100DF5E80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91F0674890E2848E76DA5E50 /* Pods-airpollution.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-airpollution.release.xcconfig"; path = "Target Support Files/Pods-airpollution/Pods-airpollution.release.xcconfig"; sourceTree = "<group>"; };
+		A0AF650F9235E32F6BDD16E1 /* Pods-airpollution.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-airpollution.debug.xcconfig"; path = "Target Support Files/Pods-airpollution/Pods-airpollution.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +45,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F123B874C921F2C7D82C427 /* Pods_airpollution.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		133AC88C62E13C39CA98E993 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A0AF650F9235E32F6BDD16E1 /* Pods-airpollution.debug.xcconfig */,
+				91F0674890E2848E76DA5E50 /* Pods-airpollution.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		41A2D4982632A6AC000A5C8A /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				41A2D49C2632A8E5000A5C8A /* AirPollutionHelper.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		41B64204263349D0003D6186 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				41B6420626334A98003D6186 /* BMHANNAProOTF.otf */,
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
 		89FD1D08262FBBFC00DF5E80 = {
 			isa = PBXGroup;
 			children = (
 				89FD1D13262FBBFC00DF5E80 /* airpollution */,
 				89FD1D12262FBBFC00DF5E80 /* Products */,
+				133AC88C62E13C39CA98E993 /* Pods */,
+				C6B39EC4789E2D7FAC8E7DBB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +98,9 @@
 		89FD1D13262FBBFC00DF5E80 /* airpollution */ = {
 			isa = PBXGroup;
 			children = (
+				41B64204263349D0003D6186 /* font */,
+				419912792633035F00B3AE6D /* map.html */,
+				41A2D4982632A6AC000A5C8A /* Util */,
 				89FD1D2926301D5F00DF5E80 /* Controller */,
 				89FD1D14262FBBFC00DF5E80 /* AppDelegate.swift */,
 				89FD1D16262FBBFC00DF5E80 /* SceneDelegate.swift */,
@@ -81,6 +122,14 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		C6B39EC4789E2D7FAC8E7DBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05E2145DACC7680442C34157 /* Pods_airpollution.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -88,9 +137,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 89FD1D25262FBC0100DF5E80 /* Build configuration list for PBXNativeTarget "airpollution" */;
 			buildPhases = (
+				01F46D7D841B94197CC428F4 /* [CP] Check Pods Manifest.lock */,
 				89FD1D0D262FBBFC00DF5E80 /* Sources */,
 				89FD1D0E262FBBFC00DF5E80 /* Frameworks */,
 				89FD1D0F262FBBFC00DF5E80 /* Resources */,
+				0682B360F2629C5D5AAAC04F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -138,13 +189,57 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41B6420726334AB1003D6186 /* BMHANNAProOTF.otf in Resources */,
 				89FD1D21262FBC0100DF5E80 /* LaunchScreen.storyboard in Resources */,
+				4199127A2633035F00B3AE6D /* map.html in Resources */,
 				89FD1D1E262FBC0100DF5E80 /* Assets.xcassets in Resources */,
 				89FD1D1C262FBBFC00DF5E80 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01F46D7D841B94197CC428F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-airpollution-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0682B360F2629C5D5AAAC04F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-airpollution/Pods-airpollution-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-airpollution/Pods-airpollution-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-airpollution/Pods-airpollution-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		89FD1D0D262FBBFC00DF5E80 /* Sources */ = {
@@ -153,6 +248,7 @@
 			files = (
 				8988F20126312D9F003C724B /* FavoriteViewController.swift in Sources */,
 				89FD1D19262FBBFC00DF5E80 /* ViewController.swift in Sources */,
+				41A2D49D2632A8E5000A5C8A /* AirPollutionHelper.swift in Sources */,
 				89FD1D15262FBBFC00DF5E80 /* AppDelegate.swift in Sources */,
 				89FD1D17262FBBFC00DF5E80 /* SceneDelegate.swift in Sources */,
 				8988F1FD26312C43003C724B /* MapViewController.swift in Sources */,
@@ -299,6 +395,7 @@
 		};
 		89FD1D26262FBC0100DF5E80 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0AF650F9235E32F6BDD16E1 /* Pods-airpollution.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -317,6 +414,7 @@
 		};
 		89FD1D27262FBC0100DF5E80 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91F0674890E2848E76DA5E50 /* Pods-airpollution.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

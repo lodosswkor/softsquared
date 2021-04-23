@@ -1,0 +1,24 @@
+
+<div id='map' style='height:380px;' />
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbfvbrzrC1zHWoNZ9zQf5-6egAka3VcZE&callback=initMap">
+</script>
+<script>
+function initMap() {
+   var map = new google.maps.Map(document.getElementById('map'), { 
+         center: new google.maps.LatLng(37.477244, 126.883582),          
+         mapTypeId: google.maps.MapTypeId.ROADMAP,  
+         zoom: 13
+       });  
+  
+   
+   var t = new Date().getTime();  
+   var waqiMapOverlay = new google.maps.ImageMapType({  
+         getTileUrl: function(coord, zoom) {  
+              return 'https://tiles.aqicn.org/tiles/usepa-aqi/' + zoom + "/" + coord.x + "/" + coord.y + ".png?token=7ff740e4bd5074fa7a0f1cfe90cee3bb0b74fffe";  
+         },  
+         name: "Air Quality",  
+    });  
+   map.overlayMapTypes.insertAt(0,waqiMapOverlay);  
+}
+  
+</script>

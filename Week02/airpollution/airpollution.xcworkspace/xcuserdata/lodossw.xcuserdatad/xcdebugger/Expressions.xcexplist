@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "FavoriteViewController.processResponse(withPlacemarks:error:):FavoriteViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "locationDataList?.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in ViewController.convertToAddressWith(lat:lng:):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "placeMark?.locality">
+            </PersistentString>
+            <PersistentString
+               value = "placeMark?.subLocality">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.status():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "locationData[&quot;addr_kor&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MapViewController.viewWillAppear(_:):MapViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "str_lat">
+            </PersistentString>
+            <PersistentString
+               value = "data[&quot;lat&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

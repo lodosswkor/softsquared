@@ -29,11 +29,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func sceneDidBecomeActive(_ scene: UIScene) {
         // Called when the scene has moved from an inactive state to an active state.
         // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
+        print("Active")
+        callBackgroundImage(false)
     }
 
     func sceneWillResignActive(_ scene: UIScene) {
         // Called when the scene will move from an active state to an inactive state.
         // This may occur due to temporary interruptions (ex. an incoming phone call).
+        print("INACTIVE")
+        callBackgroundImage(true)
     }
 
     func sceneWillEnterForeground(_ scene: UIScene) {
@@ -46,7 +50,30 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
+    
+    
+    func callBackgroundImage(_ bShow: Bool) {
+            
+            let TAG_BG_IMG = -101
+            let backgroundView = window?.rootViewController?.view.window?.viewWithTag(TAG_BG_IMG)
 
+            if bShow {
+
+                if backgroundView == nil {
+                    let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.dark)
+                    let blurEffectView = UIVisualEffectView(effect: blurEffect)
+                    blurEffectView.frame = UIScreen.main.bounds
+                    blurEffectView.tag = TAG_BG_IMG
+                    blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+                    window?.rootViewController?.view.window?.addSubview(blurEffectView)
+                }
+            } else {
+
+                if let backgroundView = backgroundView {
+                    backgroundView.removeFromSuperview()
+                }
+            }
+        }
 
 }
 

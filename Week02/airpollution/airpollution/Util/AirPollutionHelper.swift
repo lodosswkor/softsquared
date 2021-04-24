@@ -33,7 +33,6 @@ class AirPollutionHelper:NSObject {
             let responseData = Data(res.utf8)
             let json = try JSON(data: responseData)
             
-            
             if let cityName = json["data"]["city"]["name"].string {
                 rtn["cityName"] = cityName
             }

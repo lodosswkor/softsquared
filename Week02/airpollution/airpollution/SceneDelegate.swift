@@ -30,14 +30,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Called when the scene has moved from an inactive state to an active state.
         // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
         print("Active")
-        callBackgroundImage(false)
+        blurView(false)
     }
 
     func sceneWillResignActive(_ scene: UIScene) {
         // Called when the scene will move from an active state to an inactive state.
         // This may occur due to temporary interruptions (ex. an incoming phone call).
         print("INACTIVE")
-        callBackgroundImage(true)
+        blurView(true)
     }
 
     func sceneWillEnterForeground(_ scene: UIScene) {
@@ -52,9 +52,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     
-    func callBackgroundImage(_ bShow: Bool) {
+    func blurView(_ bShow: Bool) {
             
-            let TAG_BG_IMG = -101
+            let TAG_BG_IMG = -1
             let backgroundView = window?.rootViewController?.view.window?.viewWithTag(TAG_BG_IMG)
 
             if bShow {
